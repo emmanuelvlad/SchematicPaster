@@ -1,0 +1,15 @@
+name: SchematicPaster
+version: '${project.version}'
+main: me.evlad.schematicpaster.SchematicPaster
+api-version: 1.18
+commands:
+  schempaster:
+    description: SchematicPaster commands
+    aliases: ["spaste", "schematicpaster"]
+    usage: /<command>
+    permission: schempaster.*
+permissions:
+  schempaster.*:
+    description: Access all commands
+    default: op
+depend: [FastAsyncWorldEdit]
